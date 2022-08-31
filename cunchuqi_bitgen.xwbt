@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\zuchengyuanli\cunchuqi\cunchuqi.ncd
+OUTFILE=D:\zuchengyuanli\cunchuqi\cunchuqi.bit
+FAMILY=Artix7
+PART=xc7a100t-2lfgg484
+WORKINGDIR=D:\zuchengyuanli\cunchuqi
+LICENSE=WebPack
+USER_INFO=__0_0_0

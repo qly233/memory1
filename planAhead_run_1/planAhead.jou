@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue May 10 19:41:05 2022
+# Process ID: 7320
+# Log file: D:/zuchengyuanli/cunchuqi/planAhead_run_1/planAhead.log
+# Journal file: D:/zuchengyuanli/cunchuqi/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/zuchengyuanli/cunchuqi/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {mem_arr[7]} {mem_arr[6]} {mem_arr[5]} {mem_arr[4]} {mem_arr[3]} {mem_arr[2]}]]
+set_property iostandard LVCMOS18 [get_ports [list {sw[1]} {sw[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {mem_arr[7]} {mem_arr[6]} {mem_arr[5]} {mem_arr[4]} {mem_arr[3]} {mem_arr[2]}]]
+set_property pulltype PULLDOWN [get_ports [list {sw[1]} {sw[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list mem_write]]
+set_property iostandard LVCMOS18 [get_ports [list clk]]
+set_property pulltype PULLDOWN [get_ports [list clk]]
+set_property pulltype PULLDOWN [get_ports [list mem_write]]
+startgroup
+set_property package_pin T3 [get_ports {mem_arr[7]}]
+endgroup
+startgroup
+set_property package_pin U3 [get_ports {mem_arr[6]}]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports {mem_arr[5]}]
+endgroup
+startgroup
+set_property package_pin V3 [get_ports {mem_arr[4]}]
+endgroup
+startgroup
+set_property package_pin V4 [get_ports {mem_arr[3]}]
+endgroup
+startgroup
+set_property package_pin W4 [get_ports {mem_arr[2]}]
+endgroup
+startgroup
+set_property package_pin Y4 [get_ports {sw[1]}]
+endgroup
+startgroup
+set_property package_pin Y6 [get_ports {sw[0]}]
+endgroup
+startgroup
+set_property package_pin R4 [get_ports clk]
+endgroup
+set_property package_pin "" [get_ports [list  mem_write]]
+startgroup
+set_property package_pin W7 [get_ports mem_write]
+endgroup
+save_constraints

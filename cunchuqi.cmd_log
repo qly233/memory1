@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/cunchuqi/cunchuqi.xst" -ofn "D:/zuchengyuanli/cunchuqi/cunchuqi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cunchuqi.ucf -p xc7a100t-fgg484-2L cunchuqi.ngc cunchuqi.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cunchuqi_map.ncd cunchuqi.ngd cunchuqi.pcf 
+par -w -intstyle ise -ol high -mt off cunchuqi_map.ncd cunchuqi.ncd cunchuqi.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml cunchuqi.twx cunchuqi.ncd -o cunchuqi.twr cunchuqi.pcf -ucf cunchuqi.ucf 
+bitgen -intstyle ise -f cunchuqi.ut cunchuqi.ncd 
+bitgen -intstyle ise -f cunchuqi.ut cunchuqi.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cunchuqi.ucf -p xc7a100t-fgg484-2L cunchuqi.ngc cunchuqi.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o cunchuqi_map.ncd cunchuqi.ngd cunchuqi.pcf 
+par -w -intstyle ise -ol high -mt off cunchuqi_map.ncd cunchuqi.ncd cunchuqi.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml cunchuqi.twx cunchuqi.ncd -o cunchuqi.twr cunchuqi.pcf -ucf cunchuqi.ucf 
+bitgen -intstyle ise -f cunchuqi.ut cunchuqi.ncd 
